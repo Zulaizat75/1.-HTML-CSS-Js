@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Coercion</title>
+</head>
+<body>
+    <h1>Type Coercion</h1>
+    
+    <script>
+        let str = "10";
+        let num = 5;
+
+        document.write("<b>Let String Operand = ''10'' <br> and Number Operand = 5 </b>");
+
+        // Addition of string and numeric value
+        document.write("<p>Addition of ''10'' and 5 : <b>" + (str + num) + "</b></p>");
+
+        // Addition of two numeric values
+        document.write("<p>Addition of 10 and 5: <b>" + (Number(str) + num) + "</b></p>");
+
+        // Subtraction of string and numeric value
+        document.write("<p>Subtraction of ''10'' and 5 : <b>" + (str - num) + "</b></p>");
+
+        // Subtraction of two numeric values
+        document.write("<p>Subtraction of 10 and 5: <b>" + (Number(str) - num) + "</b></p>");
+
+        let str2 = "500";
+        let num2 = 10;
+
+        document.write("<b>Let String Operand = ''500'' <br> and Number Operand = 10 </b>");
+
+        // Addition of different value example
+        document.write("<p>Addition of ''500'' and 10 : <b> " + (str2 + num2) + "</b></p>");
+        document.write("<p>Addition of 500 and 10: <b>" + (Number(str2) + num2) + "</b></p>");
+        document.write("<p>Subtraction of ''500'' and 10 : <b> " + (str2 - num2) + "</b></p>");
+        document.write("<p>Subtraction of 500 and 10: <b>" + (Number(str2) - num2) + "</b></p>");
+    </script>
+</body>
+</html>

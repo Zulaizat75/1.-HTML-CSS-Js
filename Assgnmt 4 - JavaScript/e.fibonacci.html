@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <script>
+        // Function to generate the Fibonacci sequence
+        function generateFibonacci(n) {
+            let fib = [0, 1];
+            for (let i = 2; i < n; i++) {
+            // Each term is the sum of the two preceding terms
+            fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            return fib;
+        }
+
+        // Display the first 10 terms of the Fibonacci sequence
+        const numTerms = 10;
+        const fibonacciSequence = generateFibonacci(numTerms);
+        console.log(`First ${numTerms} terms of the Fibonacci sequence:`);
+        
+        for (let i = 0; i < numTerms; i++) {
+            console.log(fibonacciSequence[i]);
+        }
+
+        document.write("The first 10 terms of fibonacci sequences are: " + fibonacciSequence); //display sequence in console
+    </script>
+</body>
+</html>

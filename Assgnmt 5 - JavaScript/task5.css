@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    margin: 1rem;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    background-color: beige;
+    padding: 1rem;
+    border-radius: 1rem;
+  }

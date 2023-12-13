@@ -1,0 +1,23 @@
+.box{
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    display: inline-table;
+    width: 2oopx;
+    height: 200px;
+    padding: 20px;
+    background-color: antiquewhite;
+    transition-duration: 1s; 
+}
+.container{
+    text-align: center;
+    background-color: palevioletred;
+    top: 0px;
+}
+.box:hover{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    text-rendering: inherit;
+    border-radius: 20%;
+}

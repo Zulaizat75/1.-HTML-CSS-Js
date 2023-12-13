@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - Reverse string</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <!-- initialize container div -->
+    <div id="container">
+        <!-- html for sentence input and 'reverse' button -->
+        <h1>Word Reversal</h1>
+        <label for="inputString">Enter Your Sentence:</label>
+        <input type="text" id="inputString" placeholder="Type a Sentence">
+        
+        <!-- 'reverse' button which when clicked will perform reverseString() function -->
+        <button onclick="reverseString()">Reverse</button>
+    
+        <!-- display output sentence for original and reversed sentence -->
+        <div id="output">
+            <p id="originalString">Original Sentence: </p>
+            <p id="reversedString">Reversed Sentence: </p>
+        </div>
+    </div>
+
+    <!-- call javascript -->
+    <script src="task3.js"></script>
+</body>
+</html>

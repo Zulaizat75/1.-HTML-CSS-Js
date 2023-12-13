@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    margin: 100px;
+    background-color: bisque;
+  }
+
+  label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  #numInput {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(4, 155, 4);
+    color: aliceblue;
+    cursor: pointer;
+  }
+
+  #result {
+    font-size: 20px;
+    margin-top: 20px;
+  }

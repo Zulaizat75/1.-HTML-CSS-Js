@@ -1,0 +1,31 @@
+body {
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#container {
+    text-align: center;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: beige;
+    box-shadow: 0 0 10px black;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+}

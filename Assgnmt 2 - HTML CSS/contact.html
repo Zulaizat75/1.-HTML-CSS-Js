@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+  <style>
+    .back{
+      background-color: palevioletred;
+      height: 1000px;
+    }
+    .get{
+      text-align: center;
+      margin-top: 0px;
+    }
+    table{
+      background-color: palevioletred;
+      display: flex;
+      justify-content: center;
+      border-collapse: collapse;
+      height: 1000px;
+    }
+    h1{
+      background-color: palevioletred;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="project.html">Our Events</a>
+    <a class="active" href="contact.html">Contact Us</a>
+  </div>
+<div class="back">
+  <div class="container">
+      <h1 class="get">Get In Touch With Us</h1>  
+      <div class="box">
+            <img src="https://img.icons8.com/officel/100/marker.png" alt="marker"/><h2>LOCATION</h2><p>12A Jalan Ss 21/62 Damansara Utama</p>
+      </div>
+
+      <div class="box">
+            <img width="100" height="100" src="https://img.icons8.com/cute-clipart/100/phone.png" alt="phone"/><h2>PHONE NUMBER</h2> <p>+6039999999</p>
+      </div>
+
+      <div class="box">
+            <img width="100" height="100" src="https://img.icons8.com/keek/100/experimental-new-post-keek.png" alt="experimental-new-post-keek"/><h2>EMAIL</h2> <p><p>MusicAcademy@gmail.com</p>
+      </div>
+
+  </div>
+    <hr>
+      <h1 class="get">Make Your Appointment</h1>  
+      <form>
+      <table>
+          <tr>
+            <td><b>Name</b></td> <td><input type="text" placeholder="Name"></td>
+          </tr>
+          <tr>
+              <td><b>Email</b></td> <td><input type="email" placeholder="Email"></td>
+          </tr>
+          <tr>
+              <td><b>Phone No.</b></td> <td><input type="number" placeholder="Tel" min="0"></td>
+          </tr>
+          <tr>
+              <td><b>Gender</b></td> <td><input type="radio" name="sam">Male <input type="radio" name="sam">Female</td>
+          </tr>
+          <tr>
+              <td><b>Birth Date</b></td> <td><input type="date"></td>
+          </tr>
+          <tr>
+              <td><b>Choice of Instrument</b></td>
+              <td><select name="" id="">
+                    <option value="#"disabled selected>--Please Select--</option>  
+                    <option value="Piano">Piano</option>
+                    <option value="Violin">Violin</option>
+                    <option value="Guitar">Guitar</option>
+                    <option value="Bass">Bass</option>
+                    <option value="Drum">Drum</option>
+                  </select>
+              </td>
+              <tr>
+                    <td><b>Pick Days for Appointment</b></td><td><input type="checkbox">Monday</td>
+              </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Tuesday</td>
+          </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Wednesday</td>
+          </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Thursday</td>
+          </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Friday</td>
+          </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Saturday</td>
+          </tr>
+          <tr>
+              <td></td><td><input type="checkbox">Sunday</td>
+          </tr>
+          <tr>
+              <td><b>Message Us</b></td><td><textarea rows="4" cols="50" ></textarea></td>
+          </tr>
+          <tr>
+              <td></td><td><input type="submit"><input type="reset"></td>
+          </tr>
+      </table>
+    </div>
+</body>
+</html>

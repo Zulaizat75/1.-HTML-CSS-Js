@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Global</title>
+</head>
+<body>
+    <script>
+        // Global variable
+        var globalVar = "My Name is Zul";
+
+        function local() {
+            // Local variable
+            var localVar = "I am learning Javascript";
+  
+            // Output both variables
+            console.log("Local function:");
+            console.log("Global variable:", globalVar);
+            console.log("Local variable:", localVar);
+
+            document.write("<h3>This is local function display:</h3> <br>" + globalVar);
+            document.write("<br>" + localVar);
+        }
+
+        // Output global variable before calling the function
+        console.log("Global function (before):");
+        console.log("Global variable:", globalVar);
+        document.write("<h3>This is global function display(before):</h3> <br>" + globalVar);
+        document.write("<br>local variable is an undefined error");
+
+        // Call the function
+        local();
+
+        // Output global variable after calling the function
+        // Try to output local variable outside the function (will result in an error)
+        // console.log("Trying to access local variable outside the function:", localVar);
+        document.write("<h3>This is global function display(after):</h3> <br>" + globalVar);
+        document.write("<br>local variable is an undefined error");
+        console.log("Global function (after):");
+        console.log("Global variable:", globalVar);
+        console.log("Local variable:", localVar);
+    </script>
+</body>
+</html>

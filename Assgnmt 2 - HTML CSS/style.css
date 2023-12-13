@@ -1,0 +1,104 @@
+    /* define page font */
+    body {
+        margin: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .content{
+        background-color: black;
+        color: beige;
+        padding: 2px;
+        height: 100%;
+        font-size: 28px;
+        margin-left: 180px;
+        justify-content: center;
+      }
+    /* sidebar layout */
+    .sidebar {
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: beige;
+        overflow: auto;
+        padding: 0px;
+    }
+    /* sidebar fonts layout */
+    .sidebar a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: saddlebrown;
+    }
+    /* sidebar selected fonts layout */
+    .sidebar a.active {
+        background-color: darkgreen;
+        color: aliceblue;
+    }
+    /* sidebar hover layout */
+    .sidebar a:hover {
+        color: chartreuse;
+    }
+
+    .image{
+        text-align: center;
+    }
+    .img1{
+        position: relative;
+        padding: 2px;
+        height: 400px;
+    } 
+
+    .content a:hover{
+        color: aliceblue;
+        background-color: chocolate;
+    }
+
+    /* content layout */
+    /* .content {
+        margin-left: 180px; Same as the width of the sidebar
+        font-size: 28px;
+        padding: 0px;
+    } */
+
+    /* media queries for screen size < 700px, > 400px*/
+    @media screen and (max-width: 700px) {
+        .sidebar {
+            height: auto;
+            width: 100%;
+            position: relative;
+        }
+        .sidebar a {
+            float: left;
+        }
+        div.content {
+            margin-left: 0 ;
+        }
+    }
+    /* media queries for screen size < 400px */
+    @media screen and (max-width: 400px) {
+        .sidebar a{
+            text-align: center;
+            float: none;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .content {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          float: left;
+        }
+        div.content {
+          margin-left: 0 ;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .content{
+            text-align: center;
+            float: none;
+            height: 100%;
+        }
+    }

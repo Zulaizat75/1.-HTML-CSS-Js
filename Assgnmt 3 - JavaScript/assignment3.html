@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1 id="press">This is My Home Page</h1>
+
+    <!-- display button with pop up when clicked -->
+    <button id="next" onclick="alert('You are Learning Javascript')">Click For More</button>
+
+    <!-- JavaScript Code -->
+    <script>    
+        // display alert when webpage load
+        alert("Hello, Welcome To JavaScript");
+
+        // Output message to the browser's console
+        console.log('This is My Current Home Page.');
+
+        // Modify the HTML element
+        document.getElementById('next').addEventListener('click', function(){
+            document.getElementById('press').innerHTML = 'Enjoy Learning JavaScript!';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation</title>
+</head>
+<body>
+    <h1>Sentence Manipulation</h1>
+    <!-- create mandatory input -->
+    <form id="sentenceForm">
+        <label for="input">Enter Sentence (lower-case):</label>
+        <input type="text" id="input" required>
+        <br>
+        <label for="targetWord">Enter the word to find:</label>
+        <input type="text" id="targetWord" required>
+        <br>
+        <button type="submit">Manipulate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+            document.getElementById('sentenceForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from being submitted without fill
+
+            manipulate() //continue perform manipulate() function
+            });
+
+            function manipulate() {
+            // Get the sentence and word from the input field
+            const sentenceUser = document.getElementById("input").value;
+            const targetWord = document.getElementById("targetWord").value;
+
+            function sentenceManipulate(sentence, targetWord){
+                const charCount = sentence.replace(/\s/g, '').length; // Count the number of characters in the sentence without space
+                const sentenceUpperCase = sentence.toUpperCase(); // Convert the sentence to uppercase
+                const wordPosition = sentence.indexOf(targetWord) + 1; // Find and display the position of a specific word
+                const pos = []; //find and display position of all duplicate words in the sentence
+                for(let i=0; i<sentence.length; i++){
+                    if (sentence.charAt(i)==targetWord){    
+                        pos.push(i+1)
+                    }
+                }
+                const wordPositionMessage = (wordPosition > 0) ? `Position of the word (including spaces): ${pos}` : `The word "${targetWord}" is not found in the sentence.`; //Identify target word position in sentence
+
+                return{
+                    charCount: charCount,
+                    sentenceUpperCase: sentenceUpperCase,
+                    wordPosition: wordPositionMessage
+                }; //return values from function
+            }
+
+            //update results from function sentenceManipulate() to manipulate()
+            const result = sentenceManipulate(sentenceUser, targetWord);
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `
+                <p>Number of characters (excluding spaces): ${result.charCount}</p>
+                <p>Uppercase sentence: ${result.sentenceUpperCase}</p>
+                <p>${result.wordPosition}</p>
+            `; //display calculated values as result in browser
+        }
+    </script>
+</body>
+</html>
